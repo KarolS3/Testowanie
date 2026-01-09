@@ -1,0 +1,72 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+
+\title{Mój pierwszy dokument LaTeX}
+\author{Karol Stolc}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Nagłówek}
+
+To jest przykładowy tekst w dokumencie LaTeX.  
+Przykład wzoru matematycznego w tekście: pole koła dane jest wzorem
+$P = \pi r^2$, gdzie $r$ oznacza promień.
+
+\subsection{Podnagłówek}
+
+Poniżej znajduje się lista numerowana:
+
+\begin{enumerate}
+    \item Pierwszy element listy
+    \item Drugi element listy
+    \item Trzeci element listy
+\end{enumerate}
+
+A teraz lista punktowana:
+
+\begin{itemize}
+    \item Element pierwszy
+    \item Element drugi
+    \item Element trzeci
+\end{itemize}
+
+\subsection{Tabela}
+
+Przykładowa tabela danych:
+
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Kolumna 1 & Kolumna 2 & Kolumna 3 \\
+\midrule
+A & 10 & 20 \\
+B & 30 & 40 \\
+C & 50 & 60 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Wzory matematyczne}
+
+Przykład wzoru zapisanego osobno:
+
+\begin{equation}
+\int_{0}^{1} x^2 \, dx = \frac{1}{3}
+\end{equation}
+
+Oraz równanie kwadratowe:
+
+\begin{equation}
+ax^2 + bx + c = 0
+\end{equation}
+
+\end{document}
